@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &254803504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3493508235107696981, guid: a2626aea4af174f308d6f64dd306aa28,
+    type: 3}
+  m_PrefabInstance: {fileID: 3493508234920132453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &539404652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -604,6 +610,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3318055308219634593, guid: af82619d98fe94cdda5bc60f2d78916c,
+        type: 3}
+      propertyPath: OnLaserTouch.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318055308219634593, guid: af82619d98fe94cdda5bc60f2d78916c,
+        type: 3}
+      propertyPath: OnLaserTouch.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318055308219634593, guid: af82619d98fe94cdda5bc60f2d78916c,
+        type: 3}
+      propertyPath: OnLaserTouch.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318055308219634593, guid: af82619d98fe94cdda5bc60f2d78916c,
+        type: 3}
+      propertyPath: OnLaserTouch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 254803504}
+    - target: {fileID: 3318055308219634593, guid: af82619d98fe94cdda5bc60f2d78916c,
+        type: 3}
+      propertyPath: OnLaserTouch.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318055308219634593, guid: af82619d98fe94cdda5bc60f2d78916c,
+        type: 3}
+      propertyPath: OnLaserTouch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6304217454560842750, guid: af82619d98fe94cdda5bc60f2d78916c,
         type: 3}
       propertyPath: m_LocalPosition.x
