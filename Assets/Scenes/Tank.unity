@@ -141,6 +141,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 3204956739183206092, guid: 3f5e38cb4f2f44dbdb33a20251ea51a6,
     type: 3}
+  fireInterval: 1
+  onHitUnity:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &682888150
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1965336779}
-  initialSpeed: 1000
+  initialSpeed: 100
 --- !u!1 &997268277
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +484,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1449659927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449659929}
+  - component: {fileID: 1449659928}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1449659928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449659927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae7a2fe880d4375b963ba0bb3503c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistent: 0
+  tanks:
+  - {fileID: 254803507}
+  - {fileID: 0}
+--- !u!4 &1449659929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449659927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.35477924, y: 2.381745, z: 2.0600202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1965336778
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,15 +568,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6304217454451887213, guid: af82619d98fe94cdda5bc60f2d78916c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 6304217454560842750, guid: af82619d98fe94cdda5bc60f2d78916c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.008749008
+      value: -4.34
       objectReference: {fileID: 0}
     - target: {fileID: 6304217454560842750, guid: af82619d98fe94cdda5bc60f2d78916c,
         type: 3}
@@ -581,36 +627,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tank (1) Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6304217454560842751, guid: af82619d98fe94cdda5bc60f2d78916c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6304217454568461820, guid: af82619d98fe94cdda5bc60f2d78916c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6304217454975329745, guid: af82619d98fe94cdda5bc60f2d78916c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6304217455412143569, guid: af82619d98fe94cdda5bc60f2d78916c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6304217455494785361, guid: af82619d98fe94cdda5bc60f2d78916c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6304217455900617492, guid: af82619d98fe94cdda5bc60f2d78916c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af82619d98fe94cdda5bc60f2d78916c, type: 3}

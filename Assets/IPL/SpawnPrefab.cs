@@ -11,6 +11,7 @@ namespace IPL
 
         private void Awake()
         {
+            
             _transform = transform;
         }
 
